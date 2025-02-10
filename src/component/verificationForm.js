@@ -12,6 +12,7 @@ const EmailVerification = () => {
     // Simulate sending a verification code to the email
     const generatedCode = Math.floor(100000 + Math.random() * 900000).toString();
     setVerificationCode(generatedCode);
+    console.log(generatedCode)
     alert(`Verification code sent to ${email}: ${generatedCode}`);
     setStep(2);
   };
